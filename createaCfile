@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]
+then
+	echo "Usage:$0 Filename"
+else
+	echo "#include \"binary_trees.h\"" > "$1"
+	echo "File $1 is created"
+fi
